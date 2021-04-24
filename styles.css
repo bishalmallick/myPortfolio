@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* NAVBAR SECTION STARTS */
+
+#navbar {
+    background-color: #be3144;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+li {
+    padding: 20px;
+    font-size: 1.15em;
+}
+
+li > a {
+    text-decoration: none;
+    color:floralwhite;
+}
+
+ul > li:hover {
+    background-color: black;
+    transition: all .9s cubic-bezier(.19,1,.22,1);
+}
+
+/* NAVBAR SECTION ENDS */
+
+/* WELCOME SECTION STARTS */
+
+.welcome-section {
+    padding-top: 70px;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.welcome-section h1{
+    font-size: 4em;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.welcome-section p {
+    color: #be3144;
+    font-size: 2em;
+    /* margin-top: 10px;
+    margin-bottom: 0; */
+    padding: 10px;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1080px) {
+    .welcome-section h1{
+        font-size: 3em;
+    }
+
+    .welcome-section p {
+        font-size: 1.5em;
+    }
+}
+
+/* WELCOME SECTION ENDS */
+
+/* ABOUT SECTION STARTS */
+
+.about-section {
+    background-color: #45567d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.about-section h1{
+    font-size: 3em;
+    margin: 0;
+    padding: 20px 0;
+    color: rgb(219, 219, 255);
+}
+
+.about-section p{
+    color: #f0f0f0;
+    padding: 10px 50px;
+    margin: 0;
+    font-size: 1.15em;
+    text-align: center;
+}
+
+.about-section a {
+    text-decoration: none;
+    color: ivory;
+    border: 2px whitesmoke solid;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.about-section a:hover {
+    background-color: #be3144;
+    transition: all .6s cubic-bezier(.19,1,.22,1);
+}
+
+/* ABOUT SECTION ENDS */
+
+/* PROJECT SECTION STARTS */
+
+.project-section {
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.project-section h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 3em;
+    padding-top: 70px;
+    color: #f0f0f0;
+}
+
+.project-tile {
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 1rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 2em auto 0 auto;
+}
+
+.box {
+    border: 5px #f0f0f0 solid;
+    border-radius: 5px;
+    margin: 2em;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+.box a {
+    text-decoration: none;
+    color: #f0f0f0;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* PROJECTS SECTION ENDS */
+
+/* CONTACTS SECTION STARTS */
+
+.contact-section {
+    background-color: #45567d;
+    height: 60vh;
+}
+
+.contact-header {
+    text-align: center;
+    color: #f0f0f0;
+}
+
+.contact-header h2 {
+    margin: 0;
+    font-size: 3em;
+    padding: 50px 0 20px 0;
+}
+
+.contact-header p {
+    margin: 0;
+    font-size: 1.5em;
+    padding-bottom: 30px;
+}
+
+.contact-links {
+    margin-top: 20px;
+    font-size: 1.25em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-links a {
+    margin: 20px 20px 0 20px;
+    text-decoration: none;
+    color: #f0f0f0;
+    transition: transform 0.3s ease-out;
+}
+
+.contact-links a:hover {
+    transform: translateY(8px);
+}
+
+/* CONTACT SECTION ENDS */
+
+/* FOOTER SECTION STARTS */
+
+footer {
+    background-color: #be3144;    
+}
+
+footer p {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: #f0f0f0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+/* FOOTER SECTION ENDS */
